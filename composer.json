@@ -7,7 +7,7 @@
 	"keywords": ["phpbb","emoji","noto"],
 	"license": "MIT",
 	"require": {
-		"php": ">=5.3.3"
+		"php": ">=5.4"
 	},
 	"authors": [{ "name": "JoshyPHP" }],
 	"extra": {
