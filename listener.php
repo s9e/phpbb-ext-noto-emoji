@@ -2,7 +2,7 @@
 
 /**
 * @package   s9e\noto-emoji
-* @copyright Copyright (c) 2015 The s9e Authors
+* @copyright Copyright (c) 2017-2018 The s9e Authors
 * @license   http://www.opensource.org/licenses/mit-license.php The MIT License
 */
 namespace s9e\notoemoji;
@@ -27,7 +27,7 @@ class listener implements EventSubscriberInterface
 		$dom = $tag->template->asDOM();
 		foreach ($dom->getElementsByTagName('img') as $img)
 		{
-			$img->setAttribute('src', '//cdn.jsdelivr.net/gh/s9e/emoji-assets/assets/noto/svgz/{@seq}.svgz');
+			$img->setAttribute('src', 'https://cdn.jsdelivr.net/gh/s9e/emoji-assets/assets/noto/svgz/{@seq}.svgz');
 
 			$firstChild = $img->firstChild;
 			if ($firstChild && $firstChild->nodeName === 'xsl:attribute' && $firstChild->getAttribute('name') === 'src')
